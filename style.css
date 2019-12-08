@@ -41,10 +41,75 @@ body{
 }
 .headderlinks{
     display: grid;
-    grid-template-columns: 30vw 30vw 20vw;
+    grid-template-columns: 10vw 25vw 30vw;
+    column-gap: 10vw;
     margin-left: 5vw;
     margin-top: 2vh;
     margin-bottom: 15vh;
+}
+.projectstab{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: red;
+    font-size: 1.6em;
+    height: 8vh;
+    margin-top: -1vh;
+}
+.projectstab:before{
+    background-color: #00FFFF;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25vw;
+    height: 8.9vh;
+    top: 2vh;
+    left: 26.5vw;
+    opacity: 0.5;
+    z-index: -10;
+}
+.projectstab:after{
+    background-color: red;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25vw;
+    height: 8.9vh;
+    top: 0vh;
+    left: 24.5vw;
+    opacity: 0.5;
+    z-index: -10;
+}
+.contactmetab{
+    background-color: black;
+    color: #00FFFF;
+    text-align: center;
+    font-size: 1.6em;
+    height: 8vh;
+    margin-top: -1vh;
+}
+.contactmetab:before{
+    background-color: #00FFFF;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30vw;
+    height: 8.9vh;
+    top: 2vh;
+    left: 61.5vw;
+    opacity: 0.5;
+    z-index: -10;
+}
+.contactmetab:after{
+    background-color: red;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30vw;
+    height: 8.9vh;
+    top: 0vh;
+    left: 59.5vw;
+    opacity: 0.5;
+    z-index: -10;
 }
 .bt{
     
@@ -73,9 +138,27 @@ body{
     opacity: 0.5;
     z-index: -10;
 }
-.btlink{
+.btlink1{
     font-size: 2em;
 }
+.btlink2{
+    color: white;
+    opacity: 0.5;
+    font-size: 2em;
+    position: absolute;
+    left: 6.1vw;
+    top: 1.4vh;
+}
+.btlink3{
+    color: white;
+    opacity: 0.5;
+    font-size: 2em;
+    position: absolute;
+    left: 5.1vw;
+    top: 2.5vh;
+    z-index: -1;
+}
+
 .main{
     display: grid;
     grid-template-rows: 80vh 80vh 80vh 80vh;
