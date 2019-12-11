@@ -450,13 +450,14 @@ body{
     column-gap: 8vw;
     margin-left: 3vw;
     margin-top: -5vh;
+    position: relative;
 }
 .photogroup{
     position: relative;
     height: 73vh;
     border: 10px solid rgb(0, 0, 0);
     display: grid;
-    grid-template-rows: 60vh 20vh;
+    grid-template-rows: 2vh 60vh 20vh;
     padding-top: 5%;
 }
 .photogroup:before{
@@ -465,8 +466,8 @@ body{
     height: 100%;
     width: 100%;
     margin: auto;
-    margin-top: 0;
-    margin-left: 0;
+    top: 0;
+    left: 0;
     position: absolute;
     border: 10px solid #00FFFF;
     opacity: 0.5;
@@ -484,6 +485,10 @@ body{
     border: 10px solid #FF0000;
     opacity: 0.5;
     z-index: -10;
+}
+.titleproject{
+    text-align: center;
+    margin-top: -20px;
 }
 .photobg{
     margin-left: 20%;
@@ -516,8 +521,35 @@ body{
 .projectdesc{
     background-color: rgb(0, 0, 0);
     padding: 5%;
+    position: relative;
 }
-.titleproject{
+.projectdesc:before{
+    content: "";
+    display:  block;
+    height: 98%;
+    width: 98%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: 10px solid #00FFFF;
+    opacity: 0.5;
+    z-index: -10;
+}
+.projectdesc:after{
+    content: "";
+    display:  block;
+    height: 98%;
+    width: 98% ;
+    margin: auto;
+    top: -10px;
+    left: -10px;
+    position: absolute;
+    border: 10px solid #FF0000;
+    opacity: 0.5;
+    z-index: -10;
+}
+.titleprojectdesc{
     background-color: white;
     text-align: center;
 }
