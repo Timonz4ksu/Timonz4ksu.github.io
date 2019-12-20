@@ -165,7 +165,14 @@ body{
     top: 2.5vh;
     z-index: 0;
 }
-
+a{
+    position: relative;
+    z-index: 100;
+    
+}
+a:link{
+    color: white;
+}
 .main{
     display: grid;
     grid-template-rows: 80vh 80vh 80vh 80vh;
@@ -296,6 +303,8 @@ body{
 .squarepreview{
     max-height: 100%;
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .background{
     position: absolute;
