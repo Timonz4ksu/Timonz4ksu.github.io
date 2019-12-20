@@ -1,9 +1,9 @@
 (() => {
     /* */
-    if (document.querySelector(".smallphoto")) {
-      document.querySelectorAll(".smallphoto").forEach(function(obj) {
+    if (document.querySelector(".photosmall")) {
+      document.querySelectorAll(".photosmall").forEach(function(obj) {
         obj.addEventListener("click", function(e) {
-          document.getElementById("smallphoto").src = e.target.src;
+          document.getElementById("img_target").src = e.target.src;
         });
       });
     }
