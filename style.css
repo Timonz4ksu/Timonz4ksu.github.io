@@ -292,8 +292,10 @@ body{
     opacity: 0.5;
     z-index: -10;
 }
+
 .squarepreview{
-    background-color: rgb(151, 85, 85);
+    max-height: 100%;
+    max-width: 100%;
 }
 .background{
     position: absolute;
@@ -369,9 +371,13 @@ body{
     z-index: -10;
 }
 .photomeblock{
-    background-color: rgb(255, 0, 0);
+
     width: 20vw;
     height: 55vh;
+}
+.ctmephoto{
+    max-height: 100%;
+    margin-left: 6.5%;
 }
 .sections{
     position: relative;
@@ -422,14 +428,6 @@ body{
     background-color: #FF0000;
     opacity: 0.5;
     z-index: -10;
-}
-.box1{
-    background-color: white;
-    width: 30vw;
-}
-.box2{
-    background-color: white;
-    width: 32vw;
 }
 .titlectme{
     background-color: white;
@@ -496,10 +494,13 @@ body{
     box-align: center;
     background-color: rgb(0, 0, 0);
 }
-.photoproject{
-    background-color: rgb(65, 65, 65);
-    width: auto;
-    height: auto;
+.main_image{
+    max-height: 100%;
+    max-width: 100%;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
 }
 .photossmall{
     left: 0;
@@ -512,10 +513,12 @@ body{
     column-gap: 40px;
     padding-left: 40px;
     padding-right: 40px;
+    
 }
 .photosmall{
-    background-color: rgb(81, 83, 83);
-
+    max-height: 100%;
+    max-width: 100%;
+    cursor: pointer;
 }
 
 .projectdesc{
@@ -557,6 +560,10 @@ body{
     background-color: white;
     margin-top: 10%;
     height: 85%;
+}
+p{
+    padding-left: 5%;
+    font-size: .9em;
 }
 
 @media only screen and (max-width: 800px) {
